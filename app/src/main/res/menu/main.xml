@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+        <item
+            android:id="@+id/backward"
+            android:icon="@drawable/baseline_arrow_back_24"
+            android:orderInCategory="104"
+            android:title="Backward"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/forward"
+            android:icon="@drawable/baseline_arrow_forward_24"
+            android:orderInCategory="103"
+            android:title="Forward"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/incognito"
+            android:orderInCategory="100"
+            android:title="New Incognito Tab"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/tabs"
+            android:orderInCategory="101"
+            android:title="Recent tabs"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/bookmarkthis"
+            android:icon="@drawable/baseline_bookmark_24"
+            android:title="Bookmark this"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/showbookmarks"
+            android:orderInCategory="106"
+            android:title="Show Bookmarks"
+            app:showAsAction="never" />
+
+        <item
+            android:id="@+id/refresh"
+            android:orderInCategory="102"
+            android:title="Refresh"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/history"
+            android:orderInCategory="105"
+            android:title="History"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/newtab"
+            android:icon="@drawable/baseline_add_circle_outline_24"
+            android:title="New Tab"
+            app:showAsAction="always" />
+        <item
+            android:id="@+id/settings"
+            android:orderInCategory="108"
+            android:title="Settings"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/shareurl"
+            android:orderInCategory="106"
+            android:title="Share URL"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/scan"
+            android:orderInCategory="107"
+            android:title="Scan QR Code"
+            app:showAsAction="never" />
+        <item
+            android:id="@+id/exit"
+            android:orderInCategory="109"
+            android:title="Exit"
+            app:showAsAction="never" />
+
+
+</menu>

@@ -1,5 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">WL_Ninja</string>
     <string name="settings">Setting</string>
     <string name="bookmarks">bookmarks</string>
     <string name="action_settings">action settings</string>
