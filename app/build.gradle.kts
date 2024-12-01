@@ -32,8 +32,10 @@ android {
 }
 
 dependencies {
-    implementation("me.dm7.barcodescanner:zxing:1.9")
-    implementation("om.github.michael-rapp:chrome-like-tab-switcher:0.3.2")
+
+    implementation("org.jsoup:jsoup:1.8.3")
+    implementation("com.squareup.okhttp:okhttp:2.7.2")
+    implementation("com.squareup.picasso:picasso:2.5.2")
 
     implementation(libs.appcompat)
     implementation(libs.material)
