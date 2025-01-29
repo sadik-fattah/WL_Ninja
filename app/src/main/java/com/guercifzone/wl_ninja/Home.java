@@ -161,8 +161,48 @@ webView.evaluateJavascript(adBlockingScript, null);
 webView.loadUrl("https://your-url.com");
 
         * */
-        /**/
+        /*
+                Intent in = getIntent();
+        url = in.getStringExtra("Game_loc");
+        if (TextUtils.isEmpty(url)) {
+            Toast.makeText(getApplicationContext(), "URL not found", Toast.LENGTH_SHORT).show();
+            finish();
+        }
+        webView = findViewById(R.id.webView);
+        new AdBlockerWebView.init(this).initializeWebView(webView);
+        webView.setWebViewClient(new Browser_home());
+      //  initWebView();
+        webView.loadUrl(url);
+           private class Browser_home extends WebViewClient {
+        Browser_home() {}
+        @SuppressWarnings("deprecation")
+        @Override
+        public WebResourceResponse shouldInterceptRequest(WebView view, String url) {
+            return AdBlockerWebView.blockAds(view,url) ? AdBlocker.createEmptyResource() :
+                    super.shouldInterceptRequest(view, url);
+        }
+        @Override
+        public boolean shouldOverrideUrlLoading(WebView view, WebResourceRequest request) {
+            if (AdBlocker.isAd(request.getUrl().toString())) {
+
+                return true;
+            } else {
+
+                return false;
+            }
+        }
+        @Override
+        public void onPageStarted(WebView view, String url, Bitmap favicon) {
+            super.onPageStarted(view, url, favicon);
+        }
+        @Override
+        public void onPageFinished(WebView view, String url) {
+            super.onPageFinished(view, url);
+        }
+    }
+      */
         /**/
         mywebview.loadUrl("https://example.com");
+
     }
 }
